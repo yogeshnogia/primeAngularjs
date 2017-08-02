@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="shr">
+
+<head>
+    <title>Assignment 1</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="Demo project">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="main" ng-controller="mainController">
+        <h1>Prime number or not</h1>
+        <div>
+            <input type="number" name="number" ng-model="value" placeholder=" {{ input }} " />
+            <button class="btn" type="button" ng-click="check(value)"> {{btn}} </button>
+            <br>
+        </div>
+        <div>
+            <h3> {{ans}} </h3>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+    <script src="https://code.angularjs.org/1.6.2/angular-route.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+</body>
+
+</html>
